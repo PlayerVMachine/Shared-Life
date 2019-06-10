@@ -1,0 +1,29 @@
+{
+  "name": "shared-life",
+  "version": "1.0.0",
+  "description": "webapp for sharing notes etc with the person(s) you share your life with",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlayerVMachine/Shared-Life.git"
+  },
+  "author": "Nicolas Lehman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PlayerVMachine/Shared-Life/issues"
+  },
+  "homepage": "https://github.com/PlayerVMachine/Shared-Life#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.0.0-rc.0",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
