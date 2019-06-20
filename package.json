@@ -20,10 +20,16 @@
   "homepage": "https://github.com/PlayerVMachine/Shared-Life#readme",
   "dependencies": {
     "@material-ui/core": "^4.0.0-rc.0",
+    "@material-ui/icons": "^4.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "draft": "^0.2.3",
+    "draft-js": "^0.10.5",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
+    "quill": "^1.3.6",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typeface-roboto": "0.0.54"
   }
 }
