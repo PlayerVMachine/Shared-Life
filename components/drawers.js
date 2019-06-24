@@ -9,6 +9,15 @@ import LeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/List';
 import InboxIcon from '@material-ui/icons/Inbox';
+import { makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
+
+const BackButton = withStyles(theme => ({
+  root: {
+    width: 240,
+    height: 64,
+    alignContent: 'center',
+  },
+}))(Button);
 
 //Drawer navigation menu Component
 export default class DrawerMenu extends React.Component {
@@ -36,8 +45,9 @@ export default class DrawerMenu extends React.Component {
       'Lists': this.setListDrawer,
       'Locations': this.setLocationDrawer,
       'Settings': this.setSettingsDrawer,
-    }
+    };
   }
+
 
   //onClick handler updates drawer name and contents
   setDefaultDrawer() {
@@ -105,10 +115,10 @@ export default class DrawerMenu extends React.Component {
   render() {
     return(
     <div>
-      <Button onClick={this.setDefaultDrawer}>
-        {this.state.drawerName != 'Shared Life' ? <LeftIcon /> : <HomeIcon />}
+      <BackButton onClick={this.setDefaultDrawer}>
+        {this.state.drawerName != 'Shared Life' ? <LeftIcon style={{marginRight: 2}} /> : <HomeIcon style={{marginRight: 5}} />}
         {this.state.drawerName}
-      </Button>
+      </BackButton>
       <Divider />
       <List>
         {this.state.drawerItems.map((text, index) => (

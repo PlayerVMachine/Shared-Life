@@ -17,7 +17,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Notes from '../components/textEditor';
-import ListEditor from '../components/listEditor';
 
 import DrawerMenu from '../components/drawers';
 
@@ -104,7 +103,7 @@ export default function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Shared Life
+            Responsive drawer
           </Typography>
         </Toolbar>
       </AppBar>
@@ -141,7 +140,7 @@ export default function ResponsiveDrawer(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-          <ListEditor />
+            <Notes />
       </main>
     </div>
   );
