@@ -18,6 +18,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Notes from '../components/textEditor';
 import ListEditor from '../components/listEditor';
+import LocationViewer from '../components/locationViewer';
+import ReminderEditor from '../components/reminderEditor';
 
 import DrawerMenu from '../components/drawers';
 
@@ -141,7 +143,7 @@ export default function ResponsiveDrawer(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-          <ListEditor />
+          <ReminderEditor />
       </main>
     </div>
   );
